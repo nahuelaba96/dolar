@@ -1,0 +1,37 @@
+<div class="container text-center mt-5 bg-dark pt-5 pb-5 rounded-5 border border-light">
+    <h1 class="text-primary">Blue <img rel="icon" src="assets/icons/money.png" style="width: 50px;"></h1>
+    <div class="row row-cols-2">
+        <div class="col">
+            <h4 class="text-light">Compra</h4>
+            <h1 [ngClass]="color" class="text-light">{{dolar.blue.value_buy}}</h1> 
+            <h6 class="text-secondary"><sub>Anterior</sub></h6>
+            <h5 class="text-secondary"><sub>{{dolar_anterior.blue.value_buy}}</sub></h5>
+        </div>
+        <div class="col">
+            <h4 class="text-light">Venta</h4>
+            <h1 [ngClass]="color" class="text-light">{{dolar.blue.value_sell}}</h1>
+            <h6 class="text-secondary"><sub>Anterior</sub></h6>
+            <h5 class="text-secondary"><sub>{{dolar_anterior.blue.value_sell}}</sub></h5>
+        </div>
+    </div>
+
+    <div class="text-secondary">Ultima actualizacion</div>
+    <div class="div mt-3 text-warning">
+        
+        <h6>{{dolar.last_update}}</h6>
+    </div>
+
+    <h5 class="text-secondary mt-5">El dia comenzo con </h5>
+    <div class="row row-cols-2">
+
+        <div class="col">
+            <h6>Compra</h6>
+            <h3 class="text-light">{{dolar_hoy.value_buy}}</h3>
+        </div>
+        <div class="col">
+            <h6>Venta</h6>
+            <h3 class="text-light">{{dolar_hoy.value_sell}}</h3>
+        </div>
+    </div>
+        
+</div>
