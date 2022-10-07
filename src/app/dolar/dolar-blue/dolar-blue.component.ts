@@ -13,7 +13,7 @@ import { Dolar, Dolar_Hoy } from '../interface/dolar.interface';
 })
 export class DolarBlueComponent implements OnInit {
 
-  time: number = 1500000;
+  time: number = 15000;
 
   dolar: Dolar = {
     blue: {
@@ -74,9 +74,8 @@ export class DolarBlueComponent implements OnInit {
         this.dolar_anterior.last_update = this.dolar.last_update
 
         this.dolar.blue = dolar.blue
-        this.dolar.last_update = dolar.last_update
       }
-
+      this.dolar.last_update = dolar.last_update
     })
   }
 
