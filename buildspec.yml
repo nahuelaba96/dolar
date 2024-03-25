@@ -20,16 +20,16 @@
 #       - ls -la
 #       - aws s3 sync . s3:::dollar-app-prueba --delete
 
-version: 0.2
-env:
-  variables:
-    APP_NAME: "dolar-app-test"
-phases:
-  install:
-    runtime-versions:
-      nodejs: 14.x
-    commands:
-      - npm install
-  build:
-    commands:
-      - npm start
+# version: 0.2
+# env:
+#   variables:
+#     APP_NAME: "dolar-app-test"
+# phases:
+#   install:
+#     runtime-versions:
+#       nodejs: 14.x
+#     commands:
+#       - npm install
+#   build:
+#     commands:
+#       - npm start

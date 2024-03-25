@@ -8,4 +8,9 @@ RUN npm install -g @angular/cli
 
 RUN npm install
 
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+RUN npm run build
+
+CMD [ "node", "server.js" ]
+
+# Exposing server port
+EXPOSE 8080
